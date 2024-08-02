@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download de PDFs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .pdf-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .pdf-list li {
+            margin: 10px 0;
+        }
+        .pdf-list a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        .pdf-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Baixe os PDFs</h1>
+    <ul class="pdf-list">
+        <li><a href="/api/arquivos/download/livro1.pdf" download>Baixar Livro 1</a></li>
+        <li><a href="/api/arquivos/download/livro2.pdf" download>Baixar Livro 2</a></li>
+        <li><a href="img/livro.jpg" download>Baixar Livro 3</a></li>
+        <li><a href="https://cdn-imgix.headout.com/media/images/c9db3cea62133b6a6bb70597326b4a34-388-dubai-img-worlds-of-adventure-tickets-01.jpg" download>Baixar Livro 4</a></li>
+    </ul>
+</body>
+</html>
