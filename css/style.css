@@ -145,7 +145,7 @@ nav ul li a:hover {
 #inicio {
     height: 70vh;
     min-height: 60rem;
-    background-image: url('/img/projeto.jpg');
+    background-image: url('img/projeto.jpg');
     background-size: cover;
     /* Redimensiona a imagem para caber dentro da seção sem cortar */
     background-position: center center;
@@ -349,7 +349,7 @@ nav ul li a:hover {
 
 #sobre {
     padding: 6rem 0;
-    background-image: url('/img/projeto.jpg');
+    background-image: url('/img/projeto.j');
     background-size: cover;
     /* Redimensiona a imagem para caber dentro da seção sem cortar */
     background-position: center center;
