@@ -183,7 +183,6 @@ nav ul li a:hover {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    border: #AA205E solid 1px;
     padding-right: 1rem;
 }
 
@@ -196,13 +195,12 @@ nav ul li a:hover {
 }
 */
 
-
 .content-projeto h1 {
     padding-left: 3rem;
     font-size: 4.8rem;
     position: relative;
+    text-align: left;
     z-index: 1;
-    border: #aa4c20 solid 2px;
     max-width: 55rem;
 }
 
@@ -211,7 +209,6 @@ nav ul li a:hover {
     margin: -1.5rem 0rem;
     font-weight: 600;
     z-index: 5;
-    border: #3288eb solid 2px;
 }
 
 .content-projeto h1::before {
@@ -230,12 +227,7 @@ nav ul li a:hover {
     color: #C2C2C2;
     margin-top: 2.5rem;
     font-weight: 400;
-    /*min-width: 35rem;
-    max-width: 80rem;*/
-    width: 100%;
-    border: #0fecc8 solid 2px;
-
-
+    max-width: 80rem;
 }
 
 .content-projeto button {
@@ -578,7 +570,6 @@ footer {
     font-weight: 400;
     color: #C2C2C2;
     margin-top: 5rem;
-    border: red 1px solid;
 }
 
 .info-footer {
@@ -778,8 +769,33 @@ footer {
 
 
   }
-  
-  
-  section, footer{
-    border: red solid 2px;
+
+   /* Grande (Tablet Landscape / Small Desktop) */
+   @media (max-width: 500px) {
+    .descripton-projeto {
+        width: 100%;
+    }
+
+    .content-projeto h1 {
+        padding-left: 2.5rem;
+        font-size: 3.8rem;
+    }
+    
+    .content-projeto h1 p {
+        margin: -1.2rem 0rem;
+    }
+  }
+
+  @media (max-width: 415px) {
+    .content-projeto h1 {
+        padding-left: 2.2rem;
+        font-size: 3.2rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .content-projeto h1 {
+        padding-left: 2rem;
+        font-size: 2.6rem;
+    }
   }
