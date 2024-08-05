@@ -785,6 +785,108 @@ footer {
     .content-projeto h1 p {
         margin: -1.2rem 0rem;
     }
+/* Estilos básicos para o header e logo */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+  }
+  
+  .logo img {
+    max-height: 50px;
+  }
+  
+  /* Estilos para o menu */
+  .menu {
+    position: relative;
+  }
+  
+  /* Estilos para o ícone do menu */
+  .icon-menu {
+    display: none;
+    padding-right: 1rem;
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 1.8rem;
+    right: .7rem;
+    z-index: 11;
+
+  }
+  
+  /* Estilos para o ícone do menu (padrão) */
+  .menu-toggle .fa-x {
+    display: none;
+  }
+  
+  /* Estilos para o menu no modo mobile */
+  .top-nav {
+    display: flex;
+  }
+  
+  nav ul {
+
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    padding-top: 5rem;
+    background-color: #0B142F;
+    z-index: 10;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Menu oculto por padrão em dispositivos móveis */
+  .top-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #c92222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+  }
+  
+  /* Mostrar o menu e ícones conforme a necessidade */
+  .menu-toggle .fa-bars {
+    display: block;
+  }
+  
+  .menu.active .top-nav {
+    display: flex;
+  }
+  
+  .menu.active .fa-bars {
+    display: none;
+  }
+  
+  .menu.active .fa-x {
+    display: block;
+  }
+  
+  
   }
 
   @media (max-width: 415px) {
