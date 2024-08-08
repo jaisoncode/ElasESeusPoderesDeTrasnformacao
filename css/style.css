@@ -60,7 +60,7 @@ body {
     align-items: center;
 }
 
-.logo img {
+.logo {
     max-height: 4rem;
     /* 40px */
 }
@@ -793,11 +793,14 @@ footer {
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;  
+    height: 7rem; 
+    
   }
   
   .logo img {
-    max-height: 50px;
+    max-height: 6.7rem;
+    margin-top: -1.3rem;    
   }
   
   /* Estilos para o menu */
@@ -809,11 +812,11 @@ footer {
   .icon-menu {
     display: none;
     padding-right: 1rem;
-    font-size: 24px;
+    font-size: 2.8rem;
     cursor: pointer;
     position: fixed;
-    top: 1.8rem;
-    right: .7rem;
+    top: 2.3rem;
+    right: .8rem;
     z-index: 11;
 
   }
@@ -821,6 +824,8 @@ footer {
   /* Estilos para o ícone do menu (padrão) */
   .menu-toggle .fa-x {
     display: none;
+    right: 1rem;
+
   }
   
   /* Estilos para o menu no modo mobile */
