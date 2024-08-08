@@ -71,6 +71,10 @@ nav ul {
     flex-wrap: wrap;
 }
 
+nav ul img {
+    display: none;
+}
+
 nav ul li {
     margin-right: 2.5rem;
 }
@@ -825,7 +829,6 @@ footer {
   }
   
   nav ul {
-
     list-style-type: none;
     position: fixed;
     top: 0;
@@ -833,19 +836,22 @@ footer {
     left: 0;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     background-color: #0b142ff6;
-    z-index: 10;
     align-items: center;
     justify-content: center;
+    z-index: 10;
+    padding-top: 2rem;
   }
   
   nav ul img {
+    display: block;
     max-height: 15rem;
     position: absolute;
     top: 2rem;
   }
   nav ul li {
-    margin: 0 10px;
+    margin: .8rem 0;
   }
 
   nav ul li a {
@@ -860,14 +866,6 @@ footer {
     display: none;
   }
   
-  nav ul {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  nav ul li {
-    margin: 10px 0;
-  }
   
   /* Mostrar o menu e ícones conforme a necessidade */
   .menu-toggle .fa-bars {
