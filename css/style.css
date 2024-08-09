@@ -31,11 +31,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    height: 6rem;
     width: 100%;
     color: #fff;
     padding: 1rem;
-    /* 10px */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +47,6 @@ body {
     background-color: #0B142F;
     /* Opacidade escura */
     opacity: .9;
-
     color: #fff; /* Cor do texto alterada ao rolar */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada ao rolar */
 }
@@ -57,9 +54,7 @@ body {
 
 .top-nav {
     display: flex;
-    justify-content: end;
-    background-color: tomato;
-    
+    justify-content: end;  
 }
 
 .top-nav nav{
@@ -89,7 +84,7 @@ nav ul {
     display: none;
 }
 
-nav ul img {
+nav ul li img {
     display: none;
 }
 
@@ -801,10 +796,8 @@ footer {
 /* Estilos básicos para o header e logo */
     .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;  
     height: 7rem; 
-    
   }
   
   .logo img {
@@ -814,6 +807,7 @@ footer {
   /* Estilos para o menu */
   .menu {
     position: relative;
+    
   }
   
   /* Estilos para o ícone do menu */
@@ -832,39 +826,42 @@ footer {
   /* Estilos para o ícone do menu (padrão) */
   .menu-toggle .fa-x {
     display: none;
-    right: 1rem;
-
   }
   
   /* Estilos para o menu no modo mobile */
   .top-nav {
-    display: flex;
-  }
-  
-  nav ul {
-    list-style-type: none;
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #0b142ff6;
     align-items: center;
-    justify-content: center;
-    z-index: 10;
-    padding-top: 2rem;
+    justify-content: flex-start;
+    background-color: #0b142ff6;
+    
   }
   
-  nav ul img {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 5rem;
+    text-align: center;
+    
+  }
+
+  nav ul li img {
     display: block;
     max-height: 15rem;
-    position: absolute;
-    top: 2rem;
-  }
+    margin-bottom: 2rem;
+
+
+}
+
   nav ul li {
-    margin: .8rem 0;
+   
   }
 
   nav ul li a {
@@ -872,6 +869,10 @@ footer {
     color: white;
     font-weight: 600;
 
+  }
+
+  .cta {
+    margin-top: 4rem;
   }
   
   /* Menu oculto por padrão em dispositivos móveis */
@@ -887,6 +888,7 @@ footer {
   
   .menu.active .top-nav {
     display: flex;
+ 
   }
   
   .menu.active .fa-bars {
