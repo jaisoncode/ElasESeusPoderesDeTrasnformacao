@@ -57,21 +57,32 @@ body {
 
 .top-nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: end;
+    background-color: tomato;
+    
+}
+
+.top-nav nav{
+    margin-right: 1rem;
+
 }
 
 .logo img {
     max-height: 8rem;
-    margin-left: 8rem;
+    position: absolute;
+    left: 5%;
+    transform: translateY(-50%);
     /* 40px */
 }
 
-nav ul {
+nav ul { 
+    max-width: 90rem;
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 1rem;
+    gap: 2.5rem;
+    margin-top: .8rem;
+    margin-right: 1rem;
+    
 }
 
 .icon-menu{
@@ -82,9 +93,6 @@ nav ul img {
     display: none;
 }
 
-nav ul li {
-    margin-right: 2.5rem;
-}
 
 nav ul li a {
     color: #fff;
@@ -774,16 +782,10 @@ footer {
 }
 
   /* Grande (Tablet Landscape / Small Desktop) */
-  @media (min-width: 1025px) and (max-width: 1165px) {
-    .header{
-        display: block;
-    }
-
-
-  }
+ 
 
    /* Grande (Tablet Landscape / Small Desktop) */
-   @media (max-width: 500px) {
+   @media (max-width: 979px) {
     .descripton-projeto {
         width: 100%;
     }
@@ -797,7 +799,7 @@ footer {
         margin: -1.2rem 0rem;
     }
 /* Estilos básicos para o header e logo */
-.header {
+    .header {
     display: flex;
     justify-content: space-between;
     align-items: center;  
@@ -806,8 +808,7 @@ footer {
   }
   
   .logo img {
-    max-height: 6.7rem;
-    margin-top: -1.3rem;    
+    max-height: 6.7rem;  
   }
   
   /* Estilos para o menu */
@@ -899,12 +900,13 @@ footer {
   
   }
 
-  @media (max-width: 415px) {
-    .content-projeto h1 {
-        padding-left: 2.2rem;
-        font-size: 3.2rem;
+  @media (min-width: 980px) and ( max-width: 1135px) {
+    nav ul {
+        gap: 0rem;
     }
   }
+
+
 
   @media (max-width: 320px) {
     .content-projeto h1 {
