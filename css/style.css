@@ -63,7 +63,7 @@ body {
 }
 
 .logo img {
-    max-height: 8rem;
+    max-height: 7rem;
     position: absolute;
     left: 5%;
     transform: translateY(-50%);
@@ -801,7 +801,7 @@ footer {
   }
   
   .logo img {
-    max-height: 6.7rem;  
+    max-height: 5.7rem;  
   }
   
   /* Estilos para o menu */
