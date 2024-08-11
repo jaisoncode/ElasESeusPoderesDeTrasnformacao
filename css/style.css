@@ -468,19 +468,18 @@ nav ul li a:hover {
 
 .box {
     background-color: #0E243A;
-    max-height: 50rem;
+    max-height: auto;
     max-width: 100rem;
     padding: 4rem 4rem;
     margin: 3rem 0 10rem 0;
     position: relative;
-    border-radius: 1rem; 
+    border-radius: 1rem;      
 }
 
 .box p {
     height: auto;
     width: auto; 
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .box::after {
@@ -929,7 +928,13 @@ footer {
     .box {
         padding: 2rem 2rem;
         margin: 3rem 0 10rem 0;
+    }
 
+    .box::after { 
+        background-size: contain;
+        top: -2rem;
+        right: 5rem;
+        width: 4.5rem;  
     }
 }
 
