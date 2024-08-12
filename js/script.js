@@ -1,75 +1,45 @@
-// Seleciona a navbar
-const navbar = document.querySelector('.header');
 
-// Função para verificar o scroll e adicionar/remover classe
-function toggleNavbarColor() {
-    // Altura da navbar
-    const navbarHeight = navbar.offsetHeight;
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('nav ul li');
+    const header = document.querySelector('.header');
 
-    // Verifica se a página foi rolada além da altura da navbar
-    if (window.scrollY > navbarHeight) {
-        navbar.classList.add('scroll');
-    } else {
-        navbar.classList.remove('scroll');
+    function removeSelectPageClass() {
+      navItems.forEach(item => {
+        item.classList.remove('select-page');
+      });
     }
-}
 
-
-
-
- // Dados do livro simulado (pode ser obtido via API)
- const booksData = [
-    {
-        "title": "Where the Crawdads Sing",
-        "author": "Delia Owens",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjfEVWVqmdR82XU2f9eUuDJ_NMbmamzi0TZQ&s",
-        "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus morbi eleifend enim, tristique"
+    function addSelectPageClass(id) {
+      navItems.forEach(item => {
+        if (item.getAttribute('href') === `#${id}`) {
+          item.classList.add('select-page');
+        }
+      });
     }
-    // Adicione mais objetos de livros aqui se necessário
-];
 
-function createBook(book) {
-    const container = document.getElementById('book-list');
-    
-    if (container) { // Verifica se o container existe
-        const bookDiv = document.createElement('div');
-        bookDiv.className = 'book';
-        
-        const img = document.createElement('img');
-        img.src = book.image; // Utiliza o código base64 diretamente
-        img.alt = `imagem do livro ${book.title}`;
-        
-        const infoDiv = document.createElement('div');
-        infoDiv.className = 'info-book';
-        
-        const titleSpan = document.createElement('span');
-        titleSpan.className = 'title-book';
-        titleSpan.textContent = book.title;
-        
-        const authorSpan = document.createElement('span');
-        authorSpan.className = 'author-book';
-        authorSpan.textContent = `by ${book.author}`;
-        
-        const introP = document.createElement('p');
-        introP.className = 'intro-book';
-        introP.textContent = book.intro;
-        
-        infoDiv.appendChild(titleSpan);
-        infoDiv.appendChild(authorSpan);
-        infoDiv.appendChild(introP);
-        
-        bookDiv.appendChild(img);
-        bookDiv.appendChild(infoDiv);
-        
-        container.appendChild(bookDiv);
-    } else {
-        console.error('Element with id "book-list" not found.');
+    function onScroll() {
+      let scrollPos = window.scrollY || document.documentElement.scrollTop;
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - header.offsetHeight;
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+          const currentId = section.getAttribute('id');
+          removeSelectPageClass();
+          addSelectPageClass(currentId);
+        }
+      });
+
+      if (scrollPos > 100) {
+        header.classList.add('scroll');
+      } else {
+        header.classList.remove('scroll');
+      }
     }
-}
 
-// Adiciona todos os livros do JSON ao container
-document.addEventListener('DOMContentLoaded', () => {
-    booksData.forEach(book => createBook(book));
-});
+    window.addEventListener('scroll', onScroll);
+    onScroll(); // Run on load to set initial state
+  });
 
- 

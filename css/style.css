@@ -162,7 +162,6 @@ nav ul li a:hover {
 }
 
 #inicio {
-    height: 70vh;
     min-height: 60rem;
     background-image: url('../img/projeto.jpg');
     background-size: cover;
@@ -172,7 +171,7 @@ nav ul li a:hover {
 }
 
 #inicio-second {
-    height: 35vh;
+    height: 30rem;
     background-image: url('../img/projeto.jpg');
     background-size: cover;
     /* Redimensiona a imagem para caber dentro da seção sem cortar */
@@ -203,14 +202,15 @@ nav ul li a:hover {
     padding-right: 1rem;
 }
 
-/*
+
 #inicio-second .content-projeto {
     position: absolute;
     left: 5%;
     top: 63%;
     z-index: 1;
 }
-*/
+
+
 
 .content-projeto h1 {
     padding-left: 3rem;
@@ -219,6 +219,10 @@ nav ul li a:hover {
     text-align: left;
     z-index: 1;
     max-width: 55rem;
+}
+
+#inicio-second .content-projeto h1 {
+    max-width: 95rem;
 }
 
 .content-projeto h1 p {
