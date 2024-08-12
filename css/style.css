@@ -680,7 +680,6 @@ footer {
 /* biblioteca */
 
 .content-books {
-    background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -733,24 +732,25 @@ footer {
 }
 
 #book-list {
+    background-color: #666C89;
     margin: 2rem 4rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 3rem;
     flex-wrap: wrap;
 }
 
 .book {
+    border: red solid 1px;
     display: flex;
     gap: 2rem;
     padding: 1rem 1rem;
-    border-radius: .5rem;
-    transition: transform 0.5s ease;
+    border-radius: .3rem;
+    transition: transform 0.2s ease;
     /* Adiciona uma transição suave */
 }
 
 .book:hover {
-
     transform: scale(1.1);
     /* Aumenta o tamanho do elemento */
     background-color: white;
@@ -797,6 +797,62 @@ footer {
 
 /* Grande (Tablet Landscape / Small Desktop) */
 @media (max-width: 979px) {
+    #book-list {
+        border: red solid 1px;
+        margin: 2rem 0;
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .book {
+        border: red solid 1px;
+        display: flex;
+        gap: 2rem;
+        padding: 1rem 1rem;
+        border-radius: .3rem;
+        transition: transform 0.2s ease;
+        /* Adiciona uma transição suave */
+    }
+
+    .book img {
+        width: 11rem;
+        height: 19rem;
+        object-fit: cover;
+        margin-top: .8rem;
+        margin: auto 0;
+    }
+    
+    .info-book {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 20rem;
+        border: red solid 1px;
+    }
+    
+    .title-book {
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-align: left;
+        color: #0B142F;
+    }
+    
+    .author-book {
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-align: left;
+        color: #626262;
+    }
+    
+    .intro-book {
+        font-size: 1.4rem;
+        color: #ACACAC;
+        text-align: left;
+    
+    }
+
 
     .content-missao img {
         max-width: 50rem;
@@ -929,6 +985,42 @@ footer {
 }
 
 @media (max-width: 500px) {
+    .book img {
+        width: 9rem;
+        height: 16rem;
+        object-fit: cover;
+        margin-top: .8rem;
+        margin: auto 0;
+    }
+    
+    .info-book {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 20rem;
+        border: red solid 1px;
+    }
+    
+    .title-book {
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-align: left;
+        color: #0B142F;
+    }
+    
+    .author-book {
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-align: left;
+        color: #626262;
+    }
+    
+    .intro-book {
+        font-size: 1.4rem;
+        color: #ACACAC;
+        text-align: left;
+    
+    }
     .box {
         padding: 2rem 2rem;
         margin: 3rem 0 10rem 0;
