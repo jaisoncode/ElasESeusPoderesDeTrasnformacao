@@ -27,6 +27,10 @@ body {
     /* 16px */
 }
 
+a {
+    text-decoration: none;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -732,7 +736,6 @@ footer {
 }
 
 #book-list {
-    background-color: #666C89;
     margin: 2rem 4rem;
     display: flex;
     justify-content: space-around;
@@ -741,7 +744,6 @@ footer {
 }
 
 .book {
-    border: red solid 1px;
     display: flex;
     flex-direction: column;
    
@@ -758,8 +760,9 @@ footer {
 
 .action-pdf{
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-evenly; 
+    gap: 1rem;   
+    padding-bottom: 1rem;
 }
 
 .book:hover {
@@ -772,6 +775,21 @@ footer {
 
 .button-book{
     display: none;
+    text-align: center;
+    width: 18rem;
+    height: 5rem;
+    
+    border: none;
+    border-radius: .3rem;
+    outline: none;
+    background-color: #091242;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.button-book:hover{
+    background-color: #AA205E;
+    
 }
 
 .book:hover .button-book {
