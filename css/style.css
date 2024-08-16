@@ -743,11 +743,23 @@ footer {
 .book {
     border: red solid 1px;
     display: flex;
+    flex-direction: column;
+   
+    transition: transform 0.2s ease;
+    /* Adiciona uma transição suave */
+}
+
+.content-book{
+    display: flex;
     gap: 2rem;
     padding: 1rem 1rem;
     border-radius: .3rem;
-    transition: transform 0.2s ease;
-    /* Adiciona uma transição suave */
+}
+
+.action-pdf{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .book:hover {
@@ -756,6 +768,14 @@ footer {
     background-color: white;
     box-shadow: 0 0 10px #0b142f83;
     cursor: pointer;
+}
+
+.button-book{
+    display: none;
+}
+
+.book:hover .button-book {
+    display: block;
 }
 
 .book img {
@@ -791,6 +811,9 @@ footer {
     text-align: left;
 
 }
+
+
+
 
 /* Grande (Tablet Landscape / Small Desktop) */
 

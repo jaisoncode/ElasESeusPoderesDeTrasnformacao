@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download ou Abrir PDF</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>PDF Options</h1>
+    
+    <!-- Botão para fazer o download do PDF -->
+    <button onclick="downloadPDF()">Baixar PDF</button>
+    
+    <!-- Botão para abrir o PDF em uma nova guia -->
+    <button onclick="openPDF()">Abrir PDF</button>
+
+    <script>
+        function downloadPDF() {
+            // Cria um link temporário para download
+            const link = document.createElement('a');
+            link.href = 'pdf/documento.pdf'; // Caminho do PDF
+            link.download = 'documentooooo.pdf'; // Nome do arquivo a ser salvo
+            link.click();
+        }
+
+        function openPDF() {
+            window.open('pdf/documento.pdf', '_blank'); // Abre o PDF em uma nova guia
+        }
+    </script>
+</body>
+</html>
