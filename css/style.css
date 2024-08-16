@@ -686,7 +686,6 @@ footer {
 .content-books {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .header-content-books {
@@ -836,7 +835,74 @@ footer {
 
 
 
-/* Grande (Tablet Landscape / Small Desktop) */
+@media (max-width: 1029px) {
+    #book-list {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .book {
+       
+        display: flex;
+        gap: 2rem;
+        padding: 1rem 1rem;
+        border-radius: .3rem;
+        transition: transform 0.2s ease;
+        padding-bottom: 35px;
+        /* Adiciona uma transição suave */
+    }
+
+    .book img {
+        width: 11rem;
+        height: 19rem;
+        object-fit: cover;
+        margin-top: .8rem;
+        margin: auto 0;
+    }
+    
+    .info-book {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 20rem;
+      
+    }
+    
+    .title-book {
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-align: left;
+        color: #0B142F;
+    }
+    
+    .author-book {
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-align: left;
+        color: #626262;
+    }
+    
+    .intro-book {
+        font-size: 1.4rem;
+        color: #ACACAC;
+        text-align: left;
+    
+    }
+
+    .button-book{
+        width: 15rem;
+        height: 3.2rem;
+        font-size: 1.2rem;
+    }
+
+    .action-pdf{
+        bottom: 7px;
+      
+    }
+}
 
 
 /* Grande (Tablet Landscape / Small Desktop) */
@@ -1139,6 +1205,11 @@ footer {
         background-color: white;
         box-shadow: 0 0 10px #0b142f83;
         cursor: pointer;
+    }
+    .button-book{
+        width: 13rem;
+        height: 3.2rem;
+        font-size: 1.2rem;
     }
 }
 
