@@ -842,7 +842,6 @@ footer {
 /* Grande (Tablet Landscape / Small Desktop) */
 @media (max-width: 979px) {
     #book-list {
-        border: red solid 1px;
         margin: 2rem 0;
         display: flex;
         justify-content: space-around;
@@ -1054,7 +1053,6 @@ footer {
         flex-direction: column;
         gap: .5rem;
         width: 20rem;
-        border: red solid 1px;
     }
     
     .title-book {
@@ -1091,7 +1089,7 @@ footer {
 }
 
 
-@media (max-width: 376px) {
+@media (max-width: 390px) {
     .content-projeto h1 {
         padding-left: 2rem;
         font-size: 2.6rem;
@@ -1134,6 +1132,13 @@ footer {
         top: -2rem;
         right: 5rem;
         width: 4.5rem;  
+    }
+    .book:hover {
+        transform: scale(1);
+        /* Aumenta o tamanho do elemento */
+        background-color: white;
+        box-shadow: 0 0 10px #0b142f83;
+        cursor: pointer;
     }
 }
 
