@@ -291,6 +291,7 @@ nav ul li a:hover {
     width: 30%;
     height: 85%;
     position: absolute;
+    top: 0px;
     right: 0px;
     filter: blur(10rem);
 }
@@ -682,7 +683,6 @@ footer {
 }
 
 /* biblioteca */
-
 .content-books {
     display: flex;
     flex-direction: column;
@@ -746,7 +746,8 @@ footer {
 .book {
     display: flex;
     flex-direction: column;
-   
+    position: relative;
+    padding-bottom: 60px; /* Reserva espaço para os botões */
     transition: transform 0.2s ease;
     /* Adiciona uma transição suave */
 }
@@ -759,10 +760,15 @@ footer {
 }
 
 .action-pdf{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: space-evenly; 
-    gap: 1rem;   
-    padding-bottom: 1rem;
+    justify-content: space-evenly;
+    gap: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .book:hover {
@@ -774,11 +780,9 @@ footer {
 }
 
 .button-book{
-    display: none;
     text-align: center;
     width: 18rem;
     height: 5rem;
-    
     border: none;
     border-radius: .3rem;
     outline: none;
@@ -788,12 +792,11 @@ footer {
 }
 
 .button-book:hover{
-    background-color: #AA205E;
-    
+    background-color: #AA205E; 
 }
 
-.book:hover .button-book {
-    display: block;
+.book:hover .action-pdf {
+    opacity: 1;
 }
 
 .book img {
@@ -848,12 +851,13 @@ footer {
     }
     
     .book {
-        border: red solid 1px;
+       
         display: flex;
         gap: 2rem;
         padding: 1rem 1rem;
         border-radius: .3rem;
         transition: transform 0.2s ease;
+        padding-bottom: 35px;
         /* Adiciona uma transição suave */
     }
 
@@ -870,7 +874,7 @@ footer {
         flex-direction: column;
         gap: .5rem;
         width: 20rem;
-        border: red solid 1px;
+      
     }
     
     .title-book {
@@ -894,6 +898,17 @@ footer {
     
     }
 
+    .button-book{
+        width: 15rem;
+        height: 3.2rem;
+        font-size: 1.2rem;
+    }
+
+    .action-pdf{
+        bottom: 7px;
+      
+    }
+    
 
     .content-missao img {
         max-width: 50rem;
