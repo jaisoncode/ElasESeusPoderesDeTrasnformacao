@@ -599,13 +599,30 @@ footer {
     flex-direction: column;
 }
 
+
+.logo-footer {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.logo-footer img{
+    width: 9rem;
+}
+
+.logo-footer h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 3.2rem;
+    width: 35rem;
+}
 .title-footer p {
     max-width: 50rem;
     text-align: left;
     font-size: 1.4rem;
     font-weight: 400;
     color: #C2C2C2;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .info-footer {
