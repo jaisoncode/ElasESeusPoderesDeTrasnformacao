@@ -1174,8 +1174,10 @@ footer {
 
 @media (max-width: 430px){
     #inicio-second {
-        height: 35rem;
+        min-height: 35rem;
+        padding-bottom: 3rem;
     }
+    
     
 
     .title-footer {
