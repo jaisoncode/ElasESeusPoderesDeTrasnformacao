@@ -710,7 +710,8 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 5rem 4rem;
+    margin: 1% 1%;
+    
 }
 
 .header-content-books h2 {
@@ -725,11 +726,12 @@ footer {
 
 .search input {
     height: 5rem;
-    max-width: 36.8rem;
+    min-width: 30rem;
     position: relative;
     border-radius: 1rem;
-    border: none;
+    border: solid 1px black;
     padding-left: 3.5rem;
+    outline: none;
 }
 
 .fa-magnifying-glass {
@@ -854,6 +856,14 @@ footer {
 
 
 @media (max-width: 1029px) {
+    
+    .header-content-books h2 {
+        font-size: 3rem;
+        font-weight: 500;
+        color: #0B142F;
+    }
+    
+
     #book-list {
         margin: 2rem 0;
         display: flex;
@@ -1123,7 +1133,156 @@ footer {
     }
 }
 
+@media (max-width:670px){
+    .header-content-books {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 1% 1%;
+        
+    }
+    
+    .header-content-books h2 {
+        font-size: 2.8rem;
+        font-weight: 500;
+        color: #0B142F;
+    }
+    
+    .search {
+        position: relative;
+    }
+    
+    .search input {
+        height: 4.5rem;
+        min-width: 28rem;
+        position: relative;
+        border-radius: 1rem;
+        padding-left: 3.5rem;
+    }
+
+    .fa-magnifying-glass {
+        color: #AA205E;
+        font-size: 1.8rem;
+        border-radius: 1rem;
+        position: absolute;
+        left: 1rem;
+        top: 1.4rem;
+    }
+    
+    .fa-chevron-right {
+        font-size: 1.8rem;
+        background-color: #AA205E;
+        padding: .8rem 1.2rem;
+        border-radius: 1rem;
+        position: absolute;
+        right: 1rem;
+        top: .5rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:600px) {
+    .header-content-books {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 3rem -2rem;
+        
+    }
+    
+    .header-content-books h2 {
+        font-size: 2.8rem;
+        font-weight: 500;
+        color: #0B142F;
+    }
+    
+    .search {
+        position: relative;
+    }
+    
+    .search input {
+        height: 4.5rem;
+        min-width: 25rem;
+        position: relative;
+        border-radius: 1rem;
+        padding-left: 3.5rem;
+    }
+
+    .fa-magnifying-glass {
+        color: #AA205E;
+        font-size: 1.8rem;
+        border-radius: 1rem;
+        position: absolute;
+        left: 1rem;
+        top: 1.4rem;
+    }
+    
+    .fa-chevron-right {
+        font-size: 1.8rem;
+        background-color: #AA205E;
+        padding: .8rem 1.2rem;
+        border-radius: 1rem;
+        position: absolute;
+        right: .3rem;
+        top: .5rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 510px) {
+    .header-content-books {
+        display: flex;
+        justify-content: center;
+        margin: 3rem 0;
+        gap: 2rem;
+        
+    }
+    
+    .header-content-books h2 {
+        font-size: 2.8rem;
+        font-weight: 500;
+        color: #0B142F;
+    }
+    
+    .search {
+        position: relative;
+    }
+    
+    .search input {
+        height: 4.5rem;
+        min-width: 35rem;
+        position: relative;
+        border-radius: 1rem;
+        padding-left: 3.5rem;
+    }
+
+    .fa-magnifying-glass {
+        color: #AA205E;
+        font-size: 1.8rem;
+        border-radius: 1rem;
+        position: absolute;
+        left: 1rem;
+        top: 1.4rem;
+    }
+    
+    .fa-chevron-right {
+        font-size: 1.8rem;
+        background-color: #AA205E;
+        padding: .8rem 1.2rem;
+        border-radius: 1rem;
+        position: absolute;
+        right: 1rem;
+        top: .5rem;
+        cursor: pointer;
+    }
+}
+
 @media (max-width: 500px) {
+    .header-content-books h2 {
+        font-size: 2.5rem;
+        
+    }
+    
     .book img {
         width: 8rem;
         height: 15rem;
