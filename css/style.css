@@ -1172,7 +1172,12 @@ footer {
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 430px){
+    #inicio-second {
+        height: 35rem;
+    }
+    
+
     .title-footer {
         display: flex;
         flex-direction: column;
