@@ -1437,8 +1437,7 @@ footer {
 }
 
 @media (max-width: 430px) {
-    #book-list {
-        margin: 0 -3rem;
+    #book-list { 
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -1501,6 +1500,11 @@ footer {
 }
 
 @media (max-width: 390px) {
+    .section{
+        margin: 0;
+        padding: 0 1rem;
+    }
+        
     .content-projeto h1 {
         padding-left: 2rem;
         font-size: 2.6rem;
