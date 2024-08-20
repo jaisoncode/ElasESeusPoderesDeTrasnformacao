@@ -1437,6 +1437,11 @@ footer {
 }
 
 @media (max-width: 430px) {
+
+    .section{
+        padding: 0 3rem;
+    }
+
     #book-list { 
         display: flex;
         flex-direction: column-reverse;
