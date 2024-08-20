@@ -589,15 +589,16 @@ footer {
 
 .content-footer {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 5rem 0;
+
 }
 
 .title-footer {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    width: 100%;
 }
 
 
@@ -605,6 +606,9 @@ footer {
     display: flex;
     gap: 2rem;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
 .logo-footer img{
@@ -618,12 +622,14 @@ footer {
     width: 35rem;
 }
 .title-footer p {
-    width: 100%;
+    max-width: 50rem;
     text-align: left;
     font-size: 1.4rem;
     font-weight: 400;
     color: #C2C2C2;
     margin-top: 3rem;
+    word-wrap: break-word;
+    background-color: violet;
 }
 
 .info-footer {
@@ -657,6 +663,12 @@ footer {
     flex-direction: column;
 }
 
+.contate-us{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
 .info-item {
     color: #F5F5F5;
     position: relative;
@@ -664,6 +676,8 @@ footer {
     font-size: 1.4rem;
     font-weight: 500;
     padding-bottom: 1rem;
+    width: 25rem;
+    word-wrap: break-word;    
 }
 
 .info-item::before {
@@ -685,7 +699,7 @@ footer {
     top: 0rem;
     left: 0rem;
     width: .1rem;
-    height: 2.3rem;
+    height: 82%;
     border-radius: 100%;
     background-color: #F5F5F5;
 }
@@ -853,7 +867,38 @@ footer {
 }
 
 
+@media (max-width: 1100px) {
+    .content-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem 0;
+    }
+    .contate-us{
+        display: flex;
+        margin-left: 2rem;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+}
 
+@media (max-width: 638px) {
+    .content-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem 0;
+        width: 100%;
+    }
+    .contate-us{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0rem;
+        background-color: black;
+        width: 100%;
+    }
+}
 
 @media (max-width: 1029px) {
     
@@ -1342,7 +1387,7 @@ footer {
     .title-footer {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        
     } 
     
     .logo-footer {
@@ -1370,8 +1415,9 @@ footer {
         font-size: 1.4rem;
         font-weight: 400;
         color: #C2C2C2;
-        margin-top: 3rem;
-        
+        margin-top: 3rem; 
+        width: 100%;  
+        text-wrap: wrap;     
     }
 
 }
