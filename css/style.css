@@ -472,7 +472,7 @@ nav ul li a:hover {
 .content-depoimentos {
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
 .box {
@@ -482,13 +482,13 @@ nav ul li a:hover {
     padding: 4rem 4rem;
     margin: 3rem 0 10rem 0;
     position: relative;
-    border-radius: 1rem;      
+    border-radius: 1rem;
 }
 
 .box p {
     height: auto;
-    width: auto; 
-    text-align: center;    
+    width: auto;
+    text-align: center;
 }
 
 .box::after {
@@ -591,7 +591,7 @@ footer {
     display: flex;
     justify-content: space-around;
     margin: 4rem 0;
-    
+
 
 }
 
@@ -607,12 +607,12 @@ footer {
     display: flex;
     gap: 2rem;
     align-items: center;
-    
+
     justify-content: center;
     text-align: center;
 }
 
-.logo-footer img{
+.logo-footer img {
     width: 9rem;
 }
 
@@ -623,6 +623,7 @@ footer {
     max-width: 37rem;
     text-align: start;
 }
+
 .title-footer p {
     max-width: 55rem;
     text-align: left;
@@ -631,8 +632,8 @@ footer {
     color: #C2C2C2;
     margin-top: 3rem;
     word-wrap: break-word;
-    
-   
+
+
 }
 
 .info-footer {
@@ -666,7 +667,7 @@ footer {
     flex-direction: column;
 }
 
-.contate-us{
+.contate-us {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
@@ -683,7 +684,7 @@ footer {
     font-weight: 500;
     padding-bottom: 1rem;
     width: 25rem;
-    word-wrap: break-word;    
+    word-wrap: break-word;
 }
 
 .info-item::before {
@@ -720,17 +721,26 @@ footer {
 }
 
 /* biblioteca */
+#noResults {
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #091242;
+}
+
 .content-books {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .header-content-books {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 1% 1%;
-    
+    margin: 3% 1%;
+
 }
 
 .header-content-books h2 {
@@ -746,7 +756,7 @@ footer {
 .search input {
     height: 5rem;
     max-width: 30rem;
-    
+
     position: relative;
     border-radius: 1rem;
     border: solid 1px black;
@@ -786,19 +796,20 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-bottom: 60px; /* Reserva espaço para os botões */
+    padding-bottom: 60px;
+    /* Reserva espaço para os botões */
     transition: transform 0.2s ease;
     /* Adiciona uma transição suave */
 }
 
-.content-book{
+.content-book {
     display: flex;
     gap: 2rem;
     padding: 1rem 1rem;
     border-radius: .3rem;
 }
 
-.action-pdf{
+.action-pdf {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -818,7 +829,7 @@ footer {
     cursor: pointer;
 }
 
-.button-book{
+.button-book {
     text-align: center;
     width: 18rem;
     height: 5rem;
@@ -830,8 +841,8 @@ footer {
     font-size: 1.4rem;
 }
 
-.button-book:hover{
-    background-color: #AA205E; 
+.button-book:hover {
+    background-color: #AA205E;
 }
 
 .book:hover .action-pdf {
@@ -875,21 +886,23 @@ footer {
 
 @media (max-width: 1100px) {
 
-    .copy-footer{
+    .copy-footer {
         font-size: 1.5rem;
     }
+
     .logo-footer {
         flex-wrap: wrap;
     }
 
-    
+
     .content-footer {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 5rem 0;
     }
-    .contate-us{
+
+    .contate-us {
         display: flex;
         gap: 2rem;
         padding-top: 2rem;
@@ -905,7 +918,8 @@ footer {
         margin: 5rem 0;
         width: 100%;
     }
-    .contate-us{
+
+    .contate-us {
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -914,13 +928,13 @@ footer {
 }
 
 @media (max-width: 1029px) {
-    
+
     .header-content-books h2 {
         font-size: 3rem;
         font-weight: 500;
         color: #0B142F;
     }
-    
+
 
     #book-list {
         margin: 2rem 0;
@@ -929,9 +943,9 @@ footer {
         gap: 1rem;
         flex-wrap: wrap;
     }
-    
+
     .book {
-       
+
         display: flex;
         gap: 2rem;
         padding: 1rem 1rem;
@@ -948,45 +962,45 @@ footer {
         margin-top: .8rem;
         margin: auto 0;
     }
-    
+
     .info-book {
         display: flex;
         flex-direction: column;
         gap: .5rem;
         width: 20rem;
-      
+
     }
-    
+
     .title-book {
         font-size: 1.8rem;
         font-weight: 500;
         text-align: left;
         color: #0B142F;
     }
-    
+
     .author-book {
         font-size: 1.4rem;
         font-weight: 500;
         text-align: left;
         color: #626262;
     }
-    
+
     .intro-book {
         font-size: 1.4rem;
         color: #ACACAC;
         text-align: left;
-    
+
     }
 
-    .button-book{
+    .button-book {
         width: 15rem;
         height: 3.2rem;
         font-size: 1.2rem;
     }
 
-    .action-pdf{
+    .action-pdf {
         bottom: 7px;
-      
+
     }
 }
 
@@ -1000,9 +1014,9 @@ footer {
         gap: 1rem;
         flex-wrap: wrap;
     }
-    
+
     .book {
-       
+
         display: flex;
         gap: 2rem;
         padding: 1rem 1rem;
@@ -1019,47 +1033,47 @@ footer {
         margin-top: .8rem;
         margin: auto 0;
     }
-    
+
     .info-book {
         display: flex;
         flex-direction: column;
         gap: .5rem;
         width: 20rem;
-      
+
     }
-    
+
     .title-book {
         font-size: 1.8rem;
         font-weight: 500;
         text-align: left;
         color: #0B142F;
     }
-    
+
     .author-book {
         font-size: 1.4rem;
         font-weight: 500;
         text-align: left;
         color: #626262;
     }
-    
+
     .intro-book {
         font-size: 1.4rem;
         color: #ACACAC;
         text-align: left;
-    
+
     }
 
-    .button-book{
+    .button-book {
         width: 15rem;
         height: 3.2rem;
         font-size: 1.2rem;
     }
 
-    .action-pdf{
+    .action-pdf {
         bottom: 7px;
-      
+
     }
-    
+
 
     .content-missao img {
         max-width: 50rem;
@@ -1191,7 +1205,7 @@ footer {
     }
 }
 
-@media (max-width:670px){
+@media (max-width:670px) {
 
     .content-projeto h1 {
         padding-left: 2.5rem;
@@ -1203,19 +1217,19 @@ footer {
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 1% 1%;
-        
+
     }
-    
+
     .header-content-books h2 {
         font-size: 2.8rem;
         font-weight: 500;
         color: #0B142F;
     }
-    
+
     .search {
         position: relative;
     }
-    
+
     .search input {
         height: 4.5rem;
         min-width: 28rem;
@@ -1232,7 +1246,7 @@ footer {
         left: 1rem;
         top: 1.4rem;
     }
-    
+
     .fa-chevron-right {
         font-size: 1.8rem;
         background-color: #AA205E;
@@ -1251,7 +1265,7 @@ footer {
         font-size: 3rem;
     }
 
-    .logo-footer h1{
+    .logo-footer h1 {
         text-align: center;
     }
 
@@ -1260,19 +1274,19 @@ footer {
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 3rem -2rem;
-        
+
     }
-    
+
     .header-content-books h2 {
         font-size: 2.8rem;
         font-weight: 500;
         color: #0B142F;
     }
-    
+
     .search {
         position: relative;
     }
-    
+
     .search input {
         height: 4.5rem;
         min-width: 25rem;
@@ -1289,7 +1303,7 @@ footer {
         left: 1rem;
         top: 1.4rem;
     }
-    
+
     .fa-chevron-right {
         font-size: 1.8rem;
         background-color: #AA205E;
@@ -1313,19 +1327,19 @@ footer {
         justify-content: center;
         margin: 3rem 0;
         gap: 2rem;
-        
+
     }
-    
+
     .header-content-books h2 {
         font-size: 2.8rem;
         font-weight: 500;
         color: #0B142F;
     }
-    
+
     .search {
         position: relative;
     }
-    
+
     .search input {
         height: 4.5rem;
         min-width: 35rem;
@@ -1342,7 +1356,7 @@ footer {
         left: 1rem;
         top: 1.4rem;
     }
-    
+
     .fa-chevron-right {
         font-size: 1.8rem;
         background-color: #AA205E;
@@ -1357,19 +1371,19 @@ footer {
 
 @media (max-width: 500px) {
 
-    .contate-us{
+    .contate-us {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        align-items: center;    
+        align-items: center;
         min-width: 0rem;
     }
 
     .header-content-books h2 {
         font-size: 2.5rem;
-        
+
     }
-    
+
     .book img {
         width: 8rem;
         height: 15rem;
@@ -1377,48 +1391,49 @@ footer {
         margin-top: .8rem;
         margin: auto 0;
     }
-    
+
     .info-book {
         display: flex;
         flex-direction: column;
         gap: .5rem;
         width: 20rem;
     }
-    
+
     .title-book {
         font-size: 1.7rem;
         font-weight: 500;
         text-align: left;
         color: #0B142F;
     }
-    
+
     .author-book {
         font-size: 1.3rem;
         font-weight: 500;
         text-align: left;
         color: #626262;
     }
-    
+
     .intro-book {
         font-size: 1.3rem;
         color: #ACACAC;
         text-align: left;
-    
+
     }
+
     .box {
         padding: 2rem 2rem;
         margin: 3rem 0 10rem 0;
     }
 
-    .box::after { 
+    .box::after {
         background-size: contain;
         top: -2rem;
         right: 5rem;
-        width: 4.5rem;  
+        width: 4.5rem;
     }
 }
 
-@media (max-width: 430px){
+@media (max-width: 430px) {
 
     .search input {
         min-width: 27rem;
@@ -1433,14 +1448,14 @@ footer {
         min-height: 35rem;
         padding-bottom: 3rem;
     }
-    
+
 
     .title-footer {
         display: flex;
         flex-direction: column;
-        
-    } 
-    
+
+    }
+
     .logo-footer {
         display: flex;
         flex-direction: column;
@@ -1448,13 +1463,13 @@ footer {
         flex-wrap: wrap;
         gap: 2rem;
         align-items: center;
-       
+
     }
-    
-    .logo-footer img{
+
+    .logo-footer img {
         width: 9rem;
     }
-    
+
     .logo-footer h1 {
         color: white;
         font-weight: 600;
@@ -1462,13 +1477,14 @@ footer {
         width: 100%;
         text-align: center;
     }
+
     .title-footer p {
         text-align: left;
         font-size: 1.4rem;
         font-weight: 400;
         color: #C2C2C2;
-        margin-top: 3rem; 
-           
+        margin-top: 3rem;
+
     }
 
 }
@@ -1486,37 +1502,39 @@ footer {
         margin-top: .8rem;
         margin: auto 0;
     }
-    
+
     .info-book {
         gap: .5rem;
         width: 18rem;
- 
+
     }
-    
+
     .title-book {
         font-size: 1.6rem;
 
     }
-    
+
     .author-book {
         font-size: 1.2rem;
     }
-    
+
     .intro-book {
         font-size: 1.2rem;
-        
+
     }
+
     .box {
         padding: 2rem 2rem;
         margin: 3rem 0 10rem 0;
     }
 
-    .box::after { 
+    .box::after {
         background-size: contain;
         top: -2rem;
         right: 5rem;
-        width: 4.5rem;  
+        width: 4.5rem;
     }
+
     .book:hover {
         transform: scale(1);
         /* Aumenta o tamanho do elemento */
@@ -1524,10 +1542,10 @@ footer {
         box-shadow: 0 0 10px #0b142f83;
         cursor: pointer;
     }
-    .button-book{
+
+    .button-book {
         width: 13rem;
         height: 3.2rem;
         font-size: 1.2rem;
     }
 }
-

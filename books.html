@@ -35,7 +35,7 @@
             <ul>
               <li><img src="img/logoElas.png" alt="Logo do Projeto" /></li>
               <li><a href="books.html" class="select-page">Biblioteca</a></li>
-              <li><a href="index.html">Início</a></li>              
+              <li><a href="index.html">Início</a></li>
               <li><a href="#">Ações</a></li>
             </ul>
           </nav>
@@ -50,26 +50,39 @@
       <div class="neon"></div>
       <div class="content-projeto">
         <h1>
-          <p>Acervo Digital <br> Veja as historias mais emociantes</p>
+          <p>
+            Acervo Digital <br />
+            Veja as historias mais emociantes
+          </p>
         </h1>
         <!-- Conteúdo da primeira seção, como uma imagem de fundo -->
         <div class="descripton-projeto">
           <p>
-            Bem-vindo à nossa plataforma dedicada à promoção da equidade de gênero e ao empoderamento feminino.
+            Bem-vindo à nossa plataforma dedicada à promoção da equidade de
+            gênero e ao empoderamento feminino.
           </p>
         </div>
       </div>
     </section>
-    
+
     <section id="books" class="section">
       <div class="content-books">
         <div class="header-content-books">
           <h2 id="">Todos os livros</h2>
           <div class="search">
-            <input type="search"name="" id=""placeholder="Pesquise por um livro"/>
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="Pesquise por um livro"
+            />
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-solid fa-chevron-right"></i>
           </div>
+        </div>
+
+        <!-- Aviso de Nenhum Livro Encontrado -->
+        <div id="noResults">
+          <p>Nenhum livro encontrado.</p>
         </div>
 
         <div id="book-list">
@@ -77,16 +90,27 @@
             <div class="content-book">
               <img src="img/livro.jpg" alt="imagem do livro" />
               <div class="info-book">
-                <span class="title-book">Where the Crawdads Sing</span>
+                <span class="title-book">The little principal</span>
                 <span class="author-book">by Delia Owens</span>
                 <p class="intro-book">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus morbi eleifend enim, tristique
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+                  morbi eleifend enim, tristique
                 </p>
               </div>
             </div>
             <div class="action-pdf">
-              <button onclick="downloadPDF('pdf/documento.pdf')" class="button-book font-button">Baixar PDF</button>
-              <button onclick="openPDF('pdf/documento.pdf')" class="button-book font-button">Abrir em outra guia</button>
+              <button
+                onclick="downloadPDF('pdf/documento.pdf')"
+                class="button-book font-button"
+              >
+                Baixar PDF
+              </button>
+              <button
+                onclick="openPDF('pdf/documento.pdf')"
+                class="button-book font-button"
+              >
+                Abrir em outra guia
+              </button>
             </div>
           </div>
           <div class="book">
@@ -96,13 +120,51 @@
                 <span class="title-book">Where the Crawdads Sing</span>
                 <span class="author-book">by Delia Owens</span>
                 <p class="intro-book">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus morbi eleifend enim, tristique
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+                  morbi eleifend enim, tristique
                 </p>
               </div>
             </div>
             <div class="action-pdf">
-              <button onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Baixar PDF</button>
-              <button onclick="openPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Abrir em outra guia</button>
+              <button
+                onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Baixar PDF
+              </button>
+              <button
+                onclick="openPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Abrir em outra guia
+              </button>
+            </div>
+          </div>
+          <div class="book">
+            <div class="content-book">
+              <img src="img/livro.jpg" alt="imagem do livro" />
+              <div class="info-book">
+                <span class="title-book">Where the Crawdads Sing</span>
+                <span class="author-book">by jaison Dormis</span>
+                <p class="intro-book">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+                  morbi eleifend enim, tristique
+                </p>
+              </div>
+            </div>
+            <div class="action-pdf">
+              <button
+                onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Baixar PDF
+              </button>
+              <button
+                onclick="openPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Abrir em outra guia
+              </button>
             </div>
           </div>
           <div class="book">
@@ -112,13 +174,24 @@
                 <span class="title-book">Where the Crawdads Sing</span>
                 <span class="author-book">by Delia Owens</span>
                 <p class="intro-book">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus morbi eleifend enim, tristique
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+                  morbi eleifend enim, tristique
                 </p>
               </div>
             </div>
             <div class="action-pdf">
-              <button onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Baixar PDF</button>
-              <button onclick="openPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Abrir em outra guia</button>
+              <button
+                onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Baixar PDF
+              </button>
+              <button
+                onclick="openPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Abrir em outra guia
+              </button>
             </div>
           </div>
           <div class="book">
@@ -128,13 +201,24 @@
                 <span class="title-book">Where the Crawdads Sing</span>
                 <span class="author-book">by Delia Owens</span>
                 <p class="intro-book">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus morbi eleifend enim, tristique
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+                  morbi eleifend enim, tristique
                 </p>
               </div>
             </div>
             <div class="action-pdf">
-              <button onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Baixar PDF</button>
-              <button onclick="openPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Abrir em outra guia</button>
+              <button
+                onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Baixar PDF
+              </button>
+              <button
+                onclick="openPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Abrir em outra guia
+              </button>
             </div>
           </div>
           <div class="book">
@@ -144,13 +228,24 @@
                 <span class="title-book">Where the Crawdads Sing</span>
                 <span class="author-book">by Delia Owens</span>
                 <p class="intro-book">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus morbi eleifend enim, tristique
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+                  morbi eleifend enim, tristique
                 </p>
               </div>
             </div>
             <div class="action-pdf">
-              <button onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Baixar PDF</button>
-              <button onclick="openPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Abrir em outra guia</button>
+              <button
+                onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Baixar PDF
+              </button>
+              <button
+                onclick="openPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Abrir em outra guia
+              </button>
             </div>
           </div>
           <div class="book">
@@ -160,13 +255,24 @@
                 <span class="title-book">Where the Crawdads Sing</span>
                 <span class="author-book">by Delia Owens</span>
                 <p class="intro-book">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus morbi eleifend enim, tristique
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+                  morbi eleifend enim, tristique
                 </p>
               </div>
             </div>
             <div class="action-pdf">
-              <button onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Baixar PDF</button>
-              <button onclick="openPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Abrir em outra guia</button>
+              <button
+                onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Baixar PDF
+              </button>
+              <button
+                onclick="openPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Abrir em outra guia
+              </button>
             </div>
           </div>
           <div class="book">
@@ -176,35 +282,29 @@
                 <span class="title-book">Where the Crawdads Sing</span>
                 <span class="author-book">by Delia Owens</span>
                 <p class="intro-book">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus morbi eleifend enim, tristique
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+                  morbi eleifend enim, tristique
                 </p>
               </div>
             </div>
             <div class="action-pdf">
-              <button onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Baixar PDF</button>
-              <button onclick="openPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Abrir em outra guia</button>
+              <button
+                onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Baixar PDF
+              </button>
+              <button
+                onclick="openPDF('pdf/where_the_crawdads_sing.pdf')"
+                class="button-book font-button"
+              >
+                Abrir em outra guia
+              </button>
             </div>
           </div>
-          <div class="book">
-            <div class="content-book">
-              <img src="img/livro.jpg" alt="imagem do livro" />
-              <div class="info-book">
-                <span class="title-book">Where the Crawdads Sing</span>
-                <span class="author-book">by Delia Owens</span>
-                <p class="intro-book">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus morbi eleifend enim, tristique
-                </p>
-              </div>
-            </div>
-            <div class="action-pdf">
-              <button onclick="downloadPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Baixar PDF</button>
-              <button onclick="openPDF('pdf/where_the_crawdads_sing.pdf')" class="button-book font-button">Abrir em outra guia</button>
-            </div>
-          </div>
-            </div>
+        </div>
       </div>
     </section>
-
 
     <footer>
       <div class="content-footer">
@@ -254,16 +354,49 @@
 
     <script>
       function downloadPDF(pdfPath) {
-        const link = document.createElement('a');
+        const link = document.createElement("a");
         link.href = pdfPath; // Caminho do PDF específico
-        link.download = pdfPath.split('/').pop(); // Nome do arquivo
+        link.download = pdfPath.split("/").pop(); // Nome do arquivo
         link.click();
       }
-    
+
       function openPDF(pdfPath) {
-        window.open(pdfPath, '_blank'); // Abre o PDF específico em uma nova guia
+        window.open(pdfPath, "_blank"); // Abre o PDF específico em uma nova guia
       }
     </script>
+
+<!-- Script para Filtrar os Livros -->
+<script>
+  document.getElementById("searchInput").addEventListener("input", function() {
+    const searchValue = this.value.toLowerCase();
+    const books = document.querySelectorAll("#book-list .book");
+    let found = false;
+
+    books.forEach(function(book) {
+      const title = book.querySelector(".title-book").textContent.toLowerCase();
+      const author = book.querySelector(".author-book").textContent.toLowerCase();
+      const intro = book.querySelector(".intro-book").textContent.toLowerCase();
+
+      if (
+        title.includes(searchValue) ||
+        author.includes(searchValue) ||
+        intro.includes(searchValue)
+      ) {
+        book.style.display = "block"; // Mostra o livro
+        found = true;
+      } else {
+        book.style.display = "none"; // Esconde o livro
+      }
+    });
+
+    // Exibe ou esconde o aviso de "Nenhum livro encontrado"
+    if (!found) {
+      document.getElementById("noResults").style.display = "block";
+    } else {
+      document.getElementById("noResults").style.display = "none";
+    }
+  });
+</script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -273,7 +406,5 @@
 
     <script src="js/script.js"></script>
     <script src="js/menu.js"></script>
-   
-    
   </body>
 </html>
