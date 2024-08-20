@@ -1191,6 +1191,12 @@ footer {
 }
 
 @media (max-width:670px){
+
+    .content-projeto h1 {
+        padding-left: 2.5rem;
+        font-size: 3.2rem;
+    }
+
     .header-content-books {
         display: flex;
         justify-content: space-between;
@@ -1239,6 +1245,11 @@ footer {
 }
 
 @media (max-width:600px) {
+    .content-projeto h1 {
+        padding-left: 2.5rem;
+        font-size: 3rem;
+    }
+
     .logo-footer h1{
         text-align: center;
     }
@@ -1291,6 +1302,11 @@ footer {
 }
 
 @media (max-width: 510px) {
+    .content-projeto h1 {
+        padding-left: 2.5rem;
+        font-size: 2.8rem;
+    }
+
     .header-content-books {
         display: flex;
         justify-content: center;
@@ -1402,6 +1418,12 @@ footer {
 }
 
 @media (max-width: 430px){
+
+    .content-projeto h1 {
+        padding-left: 2.5rem;
+        font-size: 2.2rem;
+    }
+
     #inicio-second {
         min-height: 35rem;
         padding-bottom: 3rem;
