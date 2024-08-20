@@ -629,7 +629,7 @@ footer {
     color: #C2C2C2;
     margin-top: 3rem;
     word-wrap: break-word;
-    background-color: violet;
+   
 }
 
 .info-footer {
@@ -895,7 +895,6 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         margin-left: 0rem;
-        background-color: black;
         width: 100%;
     }
 }
@@ -1416,8 +1415,7 @@ footer {
         font-weight: 400;
         color: #C2C2C2;
         margin-top: 3rem; 
-        width: 100%;  
-        text-wrap: wrap;     
+           
     }
 
 }
