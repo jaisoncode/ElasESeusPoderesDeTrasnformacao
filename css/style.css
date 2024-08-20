@@ -590,7 +590,8 @@ footer {
 .content-footer {
     display: flex;
     justify-content: space-around;
-    margin: 5rem 0;
+    margin: 4rem 0;
+    
 
 }
 
@@ -598,7 +599,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    padding-right: 1rem;
 }
 
 
@@ -606,7 +607,7 @@ footer {
     display: flex;
     gap: 2rem;
     align-items: center;
-    flex-wrap: wrap;
+    
     justify-content: center;
     text-align: center;
 }
@@ -619,16 +620,18 @@ footer {
     color: white;
     font-weight: 600;
     font-size: 3.2rem;
-    width: 35rem;
+    max-width: 37rem;
+    text-align: start;
 }
 .title-footer p {
-    max-width: 50rem;
+    max-width: 55rem;
     text-align: left;
     font-size: 1.4rem;
     font-weight: 400;
     color: #C2C2C2;
     margin-top: 3rem;
     word-wrap: break-word;
+    
    
 }
 
@@ -711,7 +714,6 @@ footer {
     position: relative;
     display: flex;
     justify-content: center;
-
 }
 
 /* biblioteca */
@@ -868,6 +870,12 @@ footer {
 
 
 @media (max-width: 1100px) {
+
+    .logo-footer {
+        flex-wrap: wrap;
+    }
+
+    
     .content-footer {
         display: flex;
         flex-direction: column;
@@ -1226,6 +1234,10 @@ footer {
 }
 
 @media (max-width:600px) {
+    .logo-footer h1{
+        text-align: center;
+    }
+
     .header-content-books {
         display: flex;
         justify-content: space-between;
@@ -1393,6 +1405,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 2rem;
         align-items: center;
        
