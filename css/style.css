@@ -756,8 +756,7 @@ footer {
 
 .search input {
     height: 5rem;
-    max-width: 30rem;
-
+    min-width: 30rem;
     position: relative;
     border-radius: 1rem;
     border: solid 1px black;
