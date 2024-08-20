@@ -1503,7 +1503,7 @@ footer {
 
 }
 
-@media (max-width: 390px) {
+@media (max-width: 395px) {
     .section{
         margin: 0;
         padding: 0 1rem;
