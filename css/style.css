@@ -930,6 +930,9 @@ footer {
     font-weight: 500;
     padding: 1.5rem 0 0 0rem;
     border-bottom: solid 2px #EAEAEA;
+    width: 40rem;
+    
+    
 }
 
 @media (max-width: 1368px) {
@@ -951,6 +954,7 @@ footer {
         font-weight: 500;
         padding: 1.5rem 0 0 0rem;
         border-bottom: solid 2px #EAEAEA;
+        width: 38rem;
     }
     
 }
@@ -974,6 +978,7 @@ footer {
         font-weight: 500;
         padding: 1.5rem 0 0 0rem;
         border-bottom: solid 2px #EAEAEA;
+        width: 36rem;
     }
     
 }
@@ -1543,6 +1548,7 @@ footer {
         font-weight: 500;
         padding: 1.5rem 0 0 0rem;
         border-bottom: solid 2px #EAEAEA;
+        width: 32rem;
     }
     .section {
         padding: 0 3rem;
@@ -1624,6 +1630,7 @@ footer {
         font-weight: 500;
         padding: 1.5rem 0 0 0rem;
         border-bottom: solid 2px #EAEAEA;
+        width: 30rem;
     }
 
     .section {
