@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vai me dar um beijo?</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url("background.jpg") no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            position: absolute;
+            transition: left 0.3s ease, top 0.3s ease;
+        }
+
+        .screen {
+            display: none;
+            flex-direction: column;
+        }
+
+        .screen.active {
+            display: flex;
+        }
+
+        button {
+            background-color: #ff007f;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e60073;
+        }
+
+        .message-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            z-index: 20;
+            display: none;
+        }
+
+        .message-container h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #ff69b4;
+        }
+
+        .heart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            transform: rotate(45deg);
+            animation: heart-fall 7s linear infinite;
+            z-index: 10;
+        }
+
+        .heart:before, .heart:after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .heart:before {
+            top: -25px;
+            left: 0;
+        }
+
+        .heart:after {
+            left: 25px;
+            top: 0;
+        }
+
+        @keyframes heart-fall {
+            0% {
+                transform: translateY(-100vh) rotate(45deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        .soundcloud-iframe {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 0;
+            height: 0;
+            border: none;
+            z-index: 100;
+            opacity: 0; /* Deixe o iframe invisível */
+        }
+
+        .play-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff007f;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            z-index: 30;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
+        }
+
+        .overlay h1 {
+            color: white;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tela de bloqueio -->
+    <div class="overlay" id="overlay">
+        <h1>Dê o play na musica! </h1>
+        <button class="play-button" id="play-music">Play Música</button>
+    </div>
+
+    <div class="container" id="card" style="display: none;">
+        <div id="initial-screen" class="screen active">
+            <h1>Oiiii, Vamos ser felizes juntos ?</h1>
+            <div class="buttons">
+                <button id="yes-btn">Sim</button>
+                <button id="no-btn">Não</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="message-container" id="message-container">
+        <h1>Que felicidade!! Só vem neném! </h1>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="audio/mariaMusic.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const overlay = document.getElementById("overlay");
+            const initialScreen = document.getElementById("initial-screen");
+            const messageContainer = document.getElementById("message-container");
+            const yesBtn = document.getElementById("yes-btn");
+            const noBtn = document.getElementById("no-btn");
+            const card = document.getElementById("card");
+            const playButton = document.getElementById("play-music");
+            const audio = document.getElementById("background-music");
+
+            // Mostrar música
+            playButton.addEventListener("click", function () {
+                audio.play();
+                overlay.style.display = "none";
+                card.style.display = "block"; // Mostrar o card após iniciar a música
+            });
+
+            // Ao clicar em "Sim"
+            yesBtn.addEventListener("click", function () {
+                initialScreen.classList.remove("active");
+                messageContainer.style.display = "block";
+                showHearts();
+            });
+
+            // Função para mover o card inteiro
+            noBtn.addEventListener("mouseover", function () {
+                const viewportWidth = window.innerWidth;
+                const viewportHeight = window.innerHeight;
+                const cardWidth = card.offsetWidth;
+                const cardHeight = card.offsetHeight;
+
+                const newLeft = Math.random() * (viewportWidth - cardWidth);
+                const newTop = Math.random() * (viewportHeight - cardHeight);
+
+                card.style.left = `${newLeft}px`;
+                card.style.top = `${newTop}px`;
+            });
+
+            // Função para mostrar corações
+            function showHearts() {
+                for (let i = 0; i < 100; i++) {
+                    createHeart();
+                }
+            }
+
+            function createHeart() {
+                const heart = document.createElement("div");
+                heart.classList.add("heart");
+                document.body.appendChild(heart);
+
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.animationDuration = Math.random() * 5 + 5 + "s";
+
+                setTimeout(() => {
+                    heart.remove();
+                }, 10000);
+            }
+
+            // Criação contínua de corações
+            setInterval(createHeart, 500);
+        });
+    </script>
+</body>
+</html>
