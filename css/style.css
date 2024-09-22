@@ -528,6 +528,11 @@ nav ul li a:hover {
 
 }
 
+.card-depoimento img{
+    height: 10rem;
+    object-fit: contain;
+}
+
 .perfil-depoimento {
     width: 12.6rem;
     height: 12.6rem;
