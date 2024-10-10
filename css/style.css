@@ -477,6 +477,7 @@ nav ul li a:hover {
 
 .box {
     background-color: #0E243A;
+    
     max-height: auto;
     max-width: 100rem;
     padding: 4rem 4rem;
@@ -488,6 +489,12 @@ nav ul li a:hover {
 .box p {
     height: auto;
     width: auto;
+    text-align: center;
+}
+
+.box iframe{
+    width: 40vw;
+    height: 47vh;
     text-align: center;
 }
 
