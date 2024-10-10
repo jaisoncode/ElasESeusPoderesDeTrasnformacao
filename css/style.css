@@ -492,9 +492,8 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.box iframe{
-    width: 40vw;
-    height: 47vh;
+.box video{
+    height: 40vh;
     text-align: center;
 }
 
