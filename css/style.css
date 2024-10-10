@@ -530,23 +530,9 @@ nav ul li a:hover {
     margin-top: -5rem;
     margin-bottom: 3rem;
     border: none;
-    background-color: transparent;
-
-}
-
-.card-depoimento img{
-    height: 10rem;
-    object-fit: contain;
-}
-
-.perfil-depoimento {
-    width: 12.6rem;
-    height: 12.6rem;
-    margin: 0rem auto;
 }
 
 .name-depoimento {
-    margin-top: 1rem;
     font-size: 2rem;
     font-weight: 500;
     color: #0E243A;
